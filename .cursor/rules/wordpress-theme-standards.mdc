@@ -188,3 +188,31 @@ After implementation:
 * Ensure patterns work at narrow mobile widths and large desktop widths without horizontal overflow.
 * Prefer content that is clearly demo/sample content and does not imply real clients, customers, testimonials, or business claims.
 * If sample testimonial content is used in a later branch, it must be clearly fictional/demo content.
+
+## Storefront pattern requirements
+
+* Use WooCommerce blocks and native WordPress blocks for storefront merchandising patterns.
+* Prefer dynamic WooCommerce blocks such as Product Collection rather than hardcoding product cards.
+* Store reusable storefront patterns in the `/patterns` directory.
+* Storefront patterns must remain reusable outside the homepage unless there is a clear reason they are homepage-specific.
+* Use existing `theme.json` presets for colors, typography, spacing, layout, and buttons.
+* Do not duplicate design tokens or introduce raw visual values when approved presets already exist.
+* Do not create custom Gutenberg blocks for product grids, product categories, or journal listings when native WordPress/WooCommerce blocks can provide the required functionality.
+* Do not create custom PHP product queries when WooCommerce blocks can provide the required product selection.
+* Do not create custom JavaScript product sliders, filters, or merchandising behavior during this branch.
+* Product-oriented patterns must remain valid when the demo catalog changes.
+* Do not hardcode specific WooCommerce product IDs unless there is a documented reason and the pattern is intentionally demo-specific.
+* Prefer product queries based on supported WooCommerce block configuration such as newest, featured, on-sale, category, or other supported collection criteria.
+* Storefront patterns should not depend on fixed product counts to remain visually usable.
+* Product layouts must remain responsive with varying product names, prices, sale states, and image proportions.
+* Use WordPress Query Loop for editorial post listings such as journal content rather than custom PHP queries.
+* Do not create a Maker custom post type during Version 1.
+* Maker presentation in Version 1 must use ordinary WordPress content or static demo pattern content.
+* Demo maker names, bios, products, and business details must be clearly fictional/sample content.
+* Do not create real-looking testimonials or claims that imply verified customers or commercial performance.
+* Do not compose the final storefront homepage during this branch.
+* Do not create WooCommerce catalog, single-product, cart, checkout, product-search, or customer-account templates during this branch.
+* Do not add WooCommerce extensions, third-party filtering plugins, JavaScript libraries, or new dependencies during this branch.
+* Keep targeted CSS minimal and use Global Styles and supported block settings first.
+* Ensure storefront patterns remain keyboard accessible and usable at narrow mobile widths.
+* Do not begin AI production-image generation or add remote image dependencies during this branch unless separately approved.

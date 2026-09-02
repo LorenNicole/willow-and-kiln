@@ -3,7 +3,7 @@
  * Title: Shop by Category
  * Slug: willow-and-kiln/shop-by-category
  * Categories: columns, banner
- * Description: Six sample product-category cards with placeholder links. Point each card at a real category archive when the catalog exists.
+ * Description: Six sample product-category cards with empty image placeholders. Buttons link to default WooCommerce category archives.
  * Viewport Width: 1400
  */
 ?>
@@ -13,7 +13,7 @@
 	<h2 class="wp-block-heading">Shop by Category</h2>
 	<!-- /wp:heading -->
 	<!-- wp:paragraph -->
-	<p>Sample category cards. Replace the images and point the links at real product archives when those categories exist. These are placeholders, not live catalog data.</p>
+	<p>Sample category cards. Buttons point at default WooCommerce product-category archives. Images remain empty placeholders until catalog media is added.</p>
 	<!-- /wp:paragraph -->
 	<!-- wp:columns {"isStackedOnMobile":true,"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|comfortable","left":"var:preset|spacing|comfortable"}}}} -->
 	<div class="wp-block-columns alignwide">
@@ -28,7 +28,7 @@
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
 				<!-- wp:button {"className":"is-style-outline"} -->
-				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="#">Shop Ceramics</a></div>
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/product-category/ceramics/">Shop Ceramics</a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
@@ -45,7 +45,7 @@
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
 				<!-- wp:button {"className":"is-style-outline"} -->
-				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="#">Shop Candles</a></div>
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/product-category/candles/">Shop Candles</a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
@@ -62,7 +62,7 @@
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
 				<!-- wp:button {"className":"is-style-outline"} -->
-				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="#">Shop Jewelry</a></div>
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/product-category/jewelry/">Shop Jewelry</a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
@@ -83,7 +83,7 @@
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
 				<!-- wp:button {"className":"is-style-outline"} -->
-				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="#">Shop Paper</a></div>
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/product-category/paper/">Shop Paper</a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
@@ -100,7 +100,7 @@
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
 				<!-- wp:button {"className":"is-style-outline"} -->
-				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="#">Shop Textiles</a></div>
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/product-category/textiles/">Shop Textiles</a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
@@ -117,7 +117,7 @@
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
 				<!-- wp:button {"className":"is-style-outline"} -->
-				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="#">Shop Home</a></div>
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/product-category/home/">Shop Home</a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->

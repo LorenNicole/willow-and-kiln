@@ -243,3 +243,32 @@ After implementation:
 * Any fictional maker, product, or brand copy must remain clearly demo/sample content.
 * Keep mobile performance and accessibility in scope during homepage composition.
 * Do not begin final production-image generation unless separately approved.
+
+## Demo WooCommerce catalog requirements
+
+* Treat demo catalog content as development/demo data, not as production business content.
+* Keep all product names, descriptions, maker names, prices, categories, attributes, and images fictional or clearly sample content.
+* Do not imply that demo products are real commercial inventory or that fictional makers are real sellers.
+* Use WooCommerce's native product types and product data structures.
+* Include a representative mix of product states and product types so the theme can be meaningfully tested.
+* Prefer simple and variable products for Version 1.
+* Include at least one featured product, one sale product, and one out-of-stock product.
+* Do not add custom product types.
+* Do not create custom product post types or taxonomies.
+* Use WooCommerce product categories and attributes rather than inventing parallel theme-specific taxonomy systems.
+* Do not hardcode demo product data into theme templates.
+* Do not place business data in theme source files unless it is intentionally part of a documented reusable fixture/import format.
+* If demo catalog data is version-controlled, keep it in a clearly documented import/fixture file rather than embedding it into template logic.
+* Do not add custom PHP scripts that write directly to WooCommerce database tables.
+* Prefer WooCommerce-supported import/export mechanisms where practical.
+* Do not add third-party product import plugins unless explicitly approved.
+* Do not generate final production AI product imagery during this branch unless separately approved.
+* If images are required to complete catalog setup, use approved temporary local placeholders or clearly documented interim assets.
+* Do not use random remote image URLs.
+* Product slugs, category slugs, and attribute slugs should be simple, predictable, and URL-friendly.
+* Demo product data should be varied enough to expose layout problems such as long titles, sale prices, variable-product options, and missing/out-of-stock states.
+* Keep the total catalog small enough to be maintainable.
+* Do not begin Product Catalog, Single Product, Cart, Checkout, Product Search, or customer-account template work during this branch.
+* Do not modify theme design merely to make demo data fit.
+* Use the catalog to test the theme; do not distort the catalog to hide layout problems.
+* Do not add payment gateways, shipping extensions, marketplace plugins, subscription plugins, wishlists, bundles, or other WooCommerce extensions during this branch.

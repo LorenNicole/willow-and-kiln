@@ -2,11 +2,15 @@
 
 <!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
 <main class="wp-block-group">
+	<!-- wp:query-title {"level":1} /-->
+
 	<!-- wp:query {"query":{"inherit":true},"layout":{"type":"default"}} -->
 	<div class="wp-block-query">
 		<!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|section"}}} -->
+			<!-- wp:post-featured-image {"isLink":true} /-->
 			<!-- wp:post-title {"isLink":true,"level":2} /-->
-			<!-- wp:post-content /-->
+			<!-- wp:post-date /-->
+			<!-- wp:post-excerpt /-->
 		<!-- /wp:post-template -->
 
 		<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
@@ -17,7 +21,7 @@
 
 		<!-- wp:query-no-results -->
 			<!-- wp:paragraph -->
-			<p>Nothing to display.</p>
+			<p>No posts to show yet.</p>
 			<!-- /wp:paragraph -->
 		<!-- /wp:query-no-results -->
 	</div>

@@ -1,0 +1,82 @@
+Type,SKU,Name,Published,Is featured?,Short description,Description,Regular price,Sale price,Categories,In stock?,Stock,Upsells,Cross-sells,Parent,Attribute 1 name,Attribute 1 value(s),Attribute 1 visible,Attribute 1 global,Attribute 1 default
+simple,WK-CER-001,Hand-Thrown Stoneware Mug,1,0,"A wheel-thrown stoneware mug with a softly speckled glaze and comfortable everyday handle.","This fictional demo mug is shaped with a slightly tapered rim and a rounded handle. The glaze is a warm speckled clay tone meant to read as everyday studio ware.
+
+Sample catalog copy only. A small-batch studio story is used here for merchandising tests. Wipe with a damp cloth. This is not a claim about a real workshop or maker.",32,,Ceramics,1,12,WK-CER-002,,,,,,,
+simple,WK-CER-002,Wildflower Serving Bowl,1,1,"A wide serving bowl with a quiet floral impression around the rim.","This fictional demo bowl is sized for gathering and serving. The surface is a matte clay body with a faint wildflower motif around the rim.
+
+Sample catalog copy only. Intended as a table centerpiece in the demo storefront. Wipe with a damp cloth.",72,,Ceramics,1,8,,,,,,,,
+simple,WK-CER-003,Speckled Ceramic Planter,1,0,"A compact ceramic planter with a speckled glaze and a simple cylindrical form.","This fictional demo planter has a straight wall and a slightly thickened rim. The glaze is speckled so product cards can show a sale price beside a regular price.
+
+Sample catalog copy only. Place on a saucer or tray. Wipe with a damp cloth.",48,38,Ceramics,1,15,,,,,,,,
+simple,WK-CER-004,Limited Edition Tall Vase,1,0,"A tall narrow vase with a quiet silhouette. Marked out of stock in this demo catalog.","This fictional demo vase is taller than the other ceramic pieces so layouts can be tested with a longer title and an unavailable state.
+
+Sample catalog copy only. Stock is set to zero on purpose. Do not treat this as real limited inventory.",95,,Ceramics,0,0,,,,,,,,
+simple,WK-CAN-001,Cedar & Fig Soy Candle,1,1,"A soy-wax candle with a cedar and fig scent story for the demo catalog.","This fictional demo candle sits in a simple vessel with a cotton wick. The scent description is sample merchandising copy for Willow & Kiln.
+
+Trim the wick before lighting. Never leave a burning candle unattended. This is not a claim about a real fragrance house.",24,,Candles,1,12,,,,,,,,
+simple,WK-CAN-002,Linen & Sage Candle,1,0,"A pale candle with a linen and sage scent story.","This fictional demo candle is poured into a small vessel with a clean label area. Copy is written to stay short on product cards.
+
+Trim the wick before lighting. Never leave a burning candle unattended.",24,,Candles,1,15,,,,,,,,
+simple,WK-CAN-003,Amber Ceramic Candle,1,0,"A candle in a small amber-toned ceramic cup.","This fictional demo candle pairs a ceramic cup with a quietly colored wax surface. The vessel is meant to remain as a small object after the candle is gone.
+
+Trim the wick before lighting. Never leave a burning candle unattended.",32,,Candles,1,8,,,,,,,,
+simple,WK-CAN-004,Quiet Morning Candle,1,0,"A modest everyday candle with a light unscented presentation in this demo.","This fictional demo candle is the lowest price in the catalog so price layouts can be compared. The copy stays plain on purpose.
+
+Trim the wick before lighting. Never leave a burning candle unattended.",18,,Candles,1,12,,,,,,,,
+variable,WK-JEW-001,Minimal Hoop Earrings,1,0,"Simple hoop earrings offered in gold and silver finishes.","This fictional demo pair is a small hoop with a smooth surface. Finish is a global attribute so variation selection can be tested in WooCommerce.
+
+Sample catalog copy only. Wipe with a soft cloth. Not a claim about metal content or a real jeweler.",,,Jewelry,1,,,,,"Finish","Gold, Silver",1,1,Gold
+variation,WK-JEW-001-GOLD,Minimal Hoop Earrings - Gold,1,0,,,38,,Jewelry,1,8,,,WK-JEW-001,Finish,Gold,1,1,
+variation,WK-JEW-001-SLVR,Minimal Hoop Earrings - Silver,1,0,,,38,,Jewelry,1,6,,,WK-JEW-001,Finish,Silver,1,1,
+simple,WK-JEW-002,Hammered Drop Earrings,1,0,"Drop earrings with a lightly hammered surface.","This fictional demo pair has a longer silhouette than the hoops so jewelry titles and prices can vary on a grid.
+
+Sample catalog copy only. Wipe with a soft cloth.",48,,Jewelry,1,8,,,,,,,,
+simple,WK-JEW-003,Fine Chain Necklace,1,0,"A fine chain necklace with a small unadorned clasp.","This fictional demo necklace is a simple chain intended for everyday styling in the sample catalog. The longer title and mid-range price help test product cards.
+
+Sample catalog copy only. Wipe with a soft cloth.",56,,Jewelry,1,5,,,,,,,,
+simple,WK-JEW-004,Clay Bead Bracelet,1,0,"A bracelet of small clay beads on a simple cord.","This fictional demo bracelet uses matte clay beads in mixed earth tones. Copy mentions a sample studio story for merchandising tests only.
+
+Wipe with a dry cloth. This is not a claim about a real maker.",32,,Jewelry,1,12,,,,,,,,
+simple,WK-PAP-001,Linen-Bound Notebook,1,0,"A linen-bound notebook with blank pages and a quiet cover.","This fictional demo notebook is bound in a linen-look cover. The interior is blank so it can stand in for a stationery product on the storefront.
+
+Sample catalog copy only. Store away from moisture. Cross-sold with the notecard set for later cart tests.",24,,Paper,1,15,,WK-PAP-002,,,,,
+simple,WK-PAP-002,Botanical Notecard Set,1,0,"A small set of botanical notecards with envelopes.","This fictional demo set includes a handful of folded cards and matching envelopes. Artwork is described as a simple botanical line drawing.
+
+Sample catalog copy only. Store flat and away from moisture.",18,,Paper,1,12,,,,,,,,
+simple,WK-PAP-003,Studio Sketchbook,1,0,"A sketchbook with a firm cover and a modest page count.","This fictional demo sketchbook is slightly larger than the notebook so paper products are not identical on a grid.
+
+Sample catalog copy only. Store away from moisture.",32,,Paper,1,8,,,,,,,,
+simple,WK-PAP-004,Minimal Art Print,1,0,"An unframed print with a spare composition.","This fictional demo print is an unframed sheet sized for a small wall. The title is kept short so it contrasts with longer product names elsewhere.
+
+Sample catalog copy only. Keep dry and out of direct sun. Framing is not included.",38,,Paper,1,5,,,,,,,,
+variable,WK-TEX-001,Handwoven Linen Tea Towel,1,0,"A linen tea towel offered in Clay Olive Oat and Indigo.","This fictional demo towel is a rectangular linen-look textile with a simple hem. Color is a global attribute shared with the throw so variation behavior can be tested.
+
+Sample catalog copy only. Shake out and air dry. Not a claim about fiber content or a real mill.",,,Textiles,1,,,,,"Color","Clay, Olive, Oat, Indigo",1,1,Clay
+variation,WK-TEX-001-CLAY,Handwoven Linen Tea Towel - Clay,1,0,,,24,,Textiles,1,8,,,WK-TEX-001,Color,Clay,1,1,
+variation,WK-TEX-001-OLIV,Handwoven Linen Tea Towel - Olive,1,0,,,24,,Textiles,1,6,,,WK-TEX-001,Color,Olive,1,1,
+variation,WK-TEX-001-OAT,Handwoven Linen Tea Towel - Oat,1,0,,,24,,Textiles,1,8,,,WK-TEX-001,Color,Oat,1,1,
+variation,WK-TEX-001-INDG,Handwoven Linen Tea Towel - Indigo,1,0,,,24,,Textiles,1,5,,,WK-TEX-001,Color,Indigo,1,1,
+simple,WK-TEX-002,Natural Table Runner,1,1,"A natural-toned table runner with a plain weave.","This fictional demo runner is long enough to span a small table. It is marked featured so the homepage Featured Collection can show a textile beside ceramics and home goods.
+
+Sample catalog copy only. Shake out and air dry.",56,,Textiles,1,8,,,,,,,,
+variable,WK-TEX-003,Soft Woven Throw,1,0,"A soft woven throw offered in Oat Moss and Clay.","This fictional demo throw is the highest-priced textile so variable pricing and a longer product name can be tested together.
+
+Sample catalog copy only. Shake out and air dry. Color values overlap the tea towel on purpose.",,,Textiles,1,,,,,"Color","Oat, Moss, Clay",1,1,Oat
+variation,WK-TEX-003-OAT,Soft Woven Throw - Oat,1,0,,,95,,Textiles,1,5,,,WK-TEX-003,Color,Oat,1,1,
+variation,WK-TEX-003-MOSS,Soft Woven Throw - Moss,1,0,,,95,,Textiles,1,6,,,WK-TEX-003,Color,Moss,1,1,
+variation,WK-TEX-003-CLAY,Soft Woven Throw - Clay,1,0,,,95,,Textiles,1,5,,,WK-TEX-003,Color,Clay,1,1,
+simple,WK-TEX-004,Block-Printed Napkin Set,1,0,"A set of block-printed napkins in a simple folded stack.","This fictional demo set is four napkins with a repeating print. The longer hyphenated title helps test wrapping on product cards.
+
+Sample catalog copy only. Shake out and air dry.",48,,Textiles,1,12,,,,,,,,
+simple,WK-HOM-001,Woven Catchall Basket,1,0,"A small woven basket for keys and everyday objects.","This fictional demo basket has a low open form. It is grouped in Home so the six-category mix stays even.
+
+Sample catalog copy only. Dust with a dry cloth.",48,,Home,1,8,,,,,,,,
+simple,WK-HOM-002,Small Wooden Serving Tray,1,1,"A small wooden tray with raised edges for serving.","This fictional demo tray is marked featured so the Featured Collection can include a home object alongside ceramics candles and textiles.
+
+Sample catalog copy only. Wipe with a damp cloth and dry promptly.",38,,Home,1,12,,,,,,,,
+simple,WK-HOM-003,Ceramic Incense Holder,1,0,"A small ceramic incense holder with a single rest.","This fictional demo holder is a low ceramic form with a simple rest. It is one of the lowest-priced Home items.
+
+Sample catalog copy only. Use on a heat-safe surface. Never leave burning incense unattended.",18,,Home,1,15,,,,,,,,
+simple,WK-HOM-004,Handcrafted Wall Hanging,1,0,"A wall hanging with a mixed fiber and clay accent.","This fictional demo hanging is taller than most Home objects so a longer title and a higher price can sit on the same card grid.
+
+Sample catalog copy only. Dust with a dry cloth. Hang from a secure hook.",72,,Home,1,5,,,,,,,,

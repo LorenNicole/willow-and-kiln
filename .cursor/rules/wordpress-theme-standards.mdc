@@ -216,3 +216,30 @@ After implementation:
 * Keep targeted CSS minimal and use Global Styles and supported block settings first.
 * Ensure storefront patterns remain keyboard accessible and usable at narrow mobile widths.
 * Do not begin AI production-image generation or add remote image dependencies during this branch unless separately approved.
+
+## Storefront homepage requirements
+
+* Build the storefront homepage by composing existing approved patterns and native WordPress/WooCommerce blocks.
+* Do not recreate existing patterns directly inside the homepage when a reusable pattern already exists.
+* Keep `templates/home.html` reserved for the WordPress Posts Page/blog index.
+* Do not use `home.html` as the ecommerce storefront homepage.
+* Use the appropriate WordPress static front-page architecture for the storefront homepage.
+* Before implementation, verify whether `front-page.html`, a Page assigned as the static front page, or another supported block-theme approach best fits the current project architecture.
+* Prefer a solution that keeps homepage content editable through the WordPress Site Editor and/or Page editor where appropriate.
+* Keep the homepage focused on merchandising, brand storytelling, product discovery, and editorial discovery.
+* Use existing `theme.json` design tokens and approved patterns.
+* Do not duplicate global styling or pattern-specific styles in the homepage implementation.
+* Do not create new homepage-only custom blocks.
+* Do not add new JavaScript, sliders, carousels, animation libraries, or dependencies during this branch.
+* Do not add demo product data during this branch.
+* Do not create WooCommerce catalog, single-product, cart, checkout, product-search, or customer-account templates during this branch.
+* Do not create custom post types or taxonomies.
+* Ensure the homepage remains usable if dynamic product collections contain fewer items than expected.
+* Ensure the homepage remains usable when journal content or maker content changes.
+* Avoid hardcoded heights and brittle visual positioning.
+* Preserve semantic heading hierarchy and clear section landmarks.
+* Ensure calls to action have meaningful labels.
+* Do not introduce fake conversion metrics, fake testimonials, or claims that imply real customers or sales.
+* Any fictional maker, product, or brand copy must remain clearly demo/sample content.
+* Keep mobile performance and accessibility in scope during homepage composition.
+* Do not begin final production-image generation unless separately approved.

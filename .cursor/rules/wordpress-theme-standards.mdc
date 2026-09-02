@@ -115,3 +115,27 @@ After implementation:
 4. Identify any known limitations.
 5. Recommend a Git commit message.
 6. Do not create the Git commit unless explicitly asked.
+
+## Site template part requirements
+
+* Use WordPress block template parts for globally reusable structural regions such as the site header and footer.
+* Store global template parts in the `/parts` directory using valid WordPress block markup.
+* Prefer native WordPress core blocks and WooCommerce blocks over custom markup or JavaScript implementations.
+* Do not register classic WordPress navigation menus when the Navigation block can provide the required functionality.
+* Prefer the Site Logo, Site Title, Navigation, Search, Social Icons, and other appropriate native blocks where applicable.
+* Use the WooCommerce Mini-Cart block for cart access when WooCommerce provides the required functionality.
+* Do not recreate WooCommerce cart behavior with custom JavaScript.
+* Keep header and footer content editable through the WordPress Site Editor wherever practical.
+* Avoid hardcoding store-specific content when editor-configurable block content can be used.
+* Template parts must inherit the design tokens established in `theme.json`.
+* Do not duplicate global color, typography, spacing, or button styles in header/footer-specific CSS when `theme.json` already provides them.
+* Use custom CSS only when the desired layout or presentation cannot reasonably be achieved through supported block settings and Global Styles.
+* Keep responsive navigation dependent on WordPress Navigation block behavior unless a demonstrated requirement cannot be met natively.
+* Do not add custom mobile-menu JavaScript during this branch.
+* Navigation must remain keyboard operable.
+* Preserve visible focus indicators.
+* Do not remove useful accessible labels or semantics provided by WordPress or WooCommerce blocks.
+* Template parts must work at narrow mobile widths and large desktop widths without horizontal overflow.
+* Do not implement the checkout-specific header during this branch; that belongs to the later checkout branch.
+* Do not begin page-template, homepage-pattern, product-catalog, or WooCommerce-template work during this branch.
+* Do not add new dependencies for header or footer functionality.

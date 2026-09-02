@@ -33,6 +33,24 @@ Custom WordPress Gutenberg block theme with WooCommerce integration.
 - Do not create placeholder files inside directories merely to populate the future architecture.
 - The completed scaffold must activate in WordPress without PHP errors or warnings.
 
+## Global design system requirements
+
+- Use theme.json as the primary source of truth for global colors, typography, spacing, layout, and supported block styles.
+- Prefer WordPress presets and design tokens over hardcoded values in templates or CSS.
+- Do not introduce page-specific styling during the global design system branch.
+- Do not add WooCommerce-specific styling during this branch.
+- Do not add custom CSS when the same result can be achieved through theme.json.
+- Keep the design system intentionally small and cohesive.
+- Use semantic preset names that describe purpose rather than raw visual values when practical.
+- Avoid arbitrary spacing values when an existing spacing preset can be used.
+- Define content width and wide width centrally in theme.json.
+- Define typography scale, line-height strategy, and font families centrally.
+- Do not load external font services during this branch.
+- Do not add local font files unless they have been intentionally selected and approved.
+- Do not create style variations yet; alternate style variations belong to a later branch.
+- Do not modify templates beyond what is necessary to verify the design system.
+- The completed design system should make basic core blocks look intentionally branded without requiring page-level CSS.
+
 ## WooCommerce
 
 - Follow current WooCommerce block-theme development guidance.

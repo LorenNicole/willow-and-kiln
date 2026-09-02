@@ -2,7 +2,7 @@
 
 Willow & Kiln is a custom WordPress Gutenberg block theme in development for an artisan and handmade WooCommerce storefront.
 
-This repository currently contains only the **theme scaffold**: the minimum files WordPress needs to recognize and activate a block theme. Visual design, Gutenberg patterns, WooCommerce templates, and storefront layout are not implemented yet.
+The repository currently includes a valid block-theme scaffold and a global design system in `theme.json` (colors, typography, spacing, layout, and restrained core element styles). Gutenberg patterns, WooCommerce templates, and storefront header/footer/homepage layout are not implemented yet.
 
 ## Version 1 goals
 
@@ -10,14 +10,14 @@ Version 1 is planned to demonstrate:
 
 - WordPress block-theme development
 - Gutenberg patterns
-- `theme.json` / Global Styles
+- `theme.json` / Global Styles (started; tokens live in `theme.json`)
 - WooCommerce integration
 - Responsive design
 - Accessibility
 - Performance
 - Maintainable WordPress architecture
 
-Those capabilities are planned. They are not part of this scaffold branch.
+Patterns, WooCommerce, and composed layouts remain later work.
 
 ## Architecture principles
 

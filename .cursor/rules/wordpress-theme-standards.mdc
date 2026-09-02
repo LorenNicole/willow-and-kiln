@@ -1,0 +1,99 @@
+---
+description: Core development and architecture standards for the Willow & Kiln WordPress WooCommerce block theme.
+alwaysApply: true
+---
+
+# Willow & Kiln Project Standards
+
+Project type:
+Custom WordPress Gutenberg block theme with WooCommerce integration.
+
+## WordPress architecture
+
+- Follow the current WordPress Theme Handbook.
+- Build this as a block theme, not a classic theme.
+- Use theme.json as the primary design-system configuration.
+- Use WordPress templates, template parts, patterns, and Global Styles appropriately.
+- Prefer native WordPress core blocks over custom implementations.
+- Prefer Gutenberg patterns for reusable page sections.
+- Keep business functionality out of the theme.
+- Do not create custom post types in Version 1.
+
+## Theme scaffold requirements
+
+- Start with the minimum valid WordPress block theme structure.
+- Do not add files solely because they may be useful later.
+- The initial theme must include a valid style.css theme header.
+- The initial theme must include templates/index.html.
+- Keep theme.json minimal during the scaffold branch; the full design system will be added in a later branch.
+- Keep functions.php empty or minimal unless WordPress requires specific initialization.
+- Do not add WooCommerce-specific templates during the scaffold branch.
+- Do not add custom CSS beyond what is necessary to validate and identify the theme.
+- Do not add JavaScript, build tooling, npm packages, Composer packages, Sass, linting tools, or other dependencies during the scaffold branch.
+- Do not create placeholder files inside directories merely to populate the future architecture.
+- The completed scaffold must activate in WordPress without PHP errors or warnings.
+
+## WooCommerce
+
+- Follow current WooCommerce block-theme development guidance.
+- Prefer WooCommerce blocks over custom ecommerce implementations.
+- Prefer Global Styles and supported WooCommerce styling mechanisms over CSS targeting internal WooCommerce markup.
+- Do not depend on undocumented WooCommerce classes or DOM structure unless there is no supported alternative.
+- Keep Cart and Checkout blocks in their assigned WordPress page content where WooCommerce recommends doing so.
+- Do not add WooCommerce extensions or plugins without approval.
+
+## CSS and design
+
+- Prefer theme.json before writing custom CSS.
+- Use existing design tokens for color, typography, spacing, and layout.
+- Avoid arbitrary spacing values when an existing spacing preset can be used.
+- Avoid unnecessary !important declarations.
+- Keep CSS selectors shallow and maintainable.
+- Do not duplicate styling already provided by theme.json.
+
+## JavaScript
+
+- Do not add JavaScript unless native WordPress or WooCommerce functionality cannot satisfy the requirement.
+- Do not add JavaScript libraries or npm dependencies without approval.
+- Prefer progressive enhancement.
+- Keep JavaScript accessible and keyboard operable.
+
+## Accessibility
+
+- Accessibility is a requirement, not a final-stage enhancement.
+- Maintain logical heading hierarchy.
+- Maintain visible keyboard focus indicators.
+- Ensure interactive elements are keyboard accessible.
+- Maintain sufficient color contrast.
+- Use semantic HTML and appropriate landmarks.
+- Do not rely on color alone to communicate information.
+- Respect prefers-reduced-motion for nonessential animation.
+- Ensure layouts work with browser zoom and narrow viewport reflow.
+
+## Code quality
+
+- Follow WordPress coding standards where applicable.
+- Keep files focused and maintainable.
+- Avoid duplicate code.
+- Do not introduce abstractions unless they solve a real problem.
+- Do not modify unrelated files while completing a task.
+- Do not add dependencies without approval.
+
+## Working with Cursor
+
+Before making significant changes:
+
+1. Review the existing implementation.
+2. Identify the files that need to change.
+3. Explain the proposed implementation.
+4. Prefer the simplest WordPress-native solution.
+5. Do not make unrelated changes.
+
+After implementation:
+
+1. List every changed file.
+2. Explain what changed.
+3. Provide manual test steps.
+4. Identify any known limitations.
+5. Recommend a Git commit message.
+6. Do not create the Git commit unless explicitly asked.

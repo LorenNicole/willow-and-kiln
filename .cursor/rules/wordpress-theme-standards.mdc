@@ -163,3 +163,28 @@ After implementation:
 * Do not substantially redesign the header or footer during this branch.
 * Keep templates resilient to long titles, missing featured images, missing excerpts, and varying content lengths.
 * Do not begin WooCommerce, homepage, style variation, or custom pattern work during this branch.
+
+## Gutenberg pattern requirements
+
+* Use WordPress block patterns for reusable content sections that editors may insert across multiple pages.
+* Store theme-owned patterns in the `/patterns` directory.
+* Prefer native WordPress core blocks inside patterns.
+* Do not create custom Gutenberg blocks when core blocks can satisfy the requirement.
+* Patterns must be independently reusable and must not rely on being placed only on the homepage.
+* Pattern names and categories should describe the pattern's purpose rather than a specific page location.
+* Use the existing `theme.json` presets for colors, typography, spacing, layout, and buttons.
+* Do not duplicate global design tokens inside patterns.
+* Avoid hardcoded CSS values when an existing preset can be used.
+* Avoid large amounts of inline styling in block markup.
+* Use semantic block structures and maintain sensible heading hierarchy.
+* Patterns must remain usable if editors replace images, change text length, or modify button labels.
+* Patterns must not depend on fixed content heights or brittle positioning.
+* Do not create patterns that contain fake form behavior or nonfunctional controls.
+* Do not add WooCommerce-specific Product Collection patterns during the core pattern branch; those belong to the storefront-pattern branch.
+* Do not compose the final storefront homepage during this branch.
+* Do not create page templates solely to showcase patterns.
+* Do not add JavaScript, custom blocks, custom post types, external libraries, or dependencies during this branch.
+* Keep pattern-specific CSS minimal and only add it when supported block settings and `theme.json` cannot reasonably satisfy the requirement.
+* Ensure patterns work at narrow mobile widths and large desktop widths without horizontal overflow.
+* Prefer content that is clearly demo/sample content and does not imply real clients, customers, testimonials, or business claims.
+* If sample testimonial content is used in a later branch, it must be clearly fictional/demo content.

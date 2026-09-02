@@ -139,3 +139,27 @@ After implementation:
 * Do not implement the checkout-specific header during this branch; that belongs to the later checkout branch.
 * Do not begin page-template, homepage-pattern, product-catalog, or WooCommerce-template work during this branch.
 * Do not add new dependencies for header or footer functionality.
+
+## Core template requirements
+
+* Use WordPress block templates in the `/templates` directory.
+* Use valid WordPress block markup rather than classic PHP template files for Version 1.
+* Keep templates focused on document structure and content presentation.
+* Reuse existing template parts such as the global header and footer rather than duplicating their markup.
+* Prefer core WordPress blocks such as Post Title, Post Content, Post Featured Image, Post Date, Post Author, Query Loop, Pagination, Search, Group, Columns, and appropriate semantic blocks.
+* Do not hardcode post or page content into templates when dynamic WordPress blocks exist.
+* Do not create custom PHP loops when Query Loop can provide the required behavior.
+* Do not create custom pagination when WordPress pagination blocks can provide the required behavior.
+* Templates must inherit the existing `theme.json` design system.
+* Do not duplicate colors, typography, spacing, widths, or button styles already defined in `theme.json`.
+* Keep template-specific CSS minimal and only add it when supported block settings or Global Styles cannot satisfy the requirement.
+* Preserve semantic heading hierarchy.
+* Ensure archive and search result structures remain keyboard accessible and understandable to assistive technology.
+* Provide a useful empty state when search results are unavailable.
+* Provide a useful 404 experience without adding unrelated functionality.
+* Do not add WooCommerce templates during the core template branch.
+* Do not add Gutenberg patterns merely to simplify template composition unless a reusable pattern is genuinely justified and belongs to the later pattern branch.
+* Do not create custom post types, taxonomies, REST endpoints, JavaScript behaviors, or dependencies during this branch.
+* Do not substantially redesign the header or footer during this branch.
+* Keep templates resilient to long titles, missing featured images, missing excerpts, and varying content lengths.
+* Do not begin WooCommerce, homepage, style variation, or custom pattern work during this branch.
